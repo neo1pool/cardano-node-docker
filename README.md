@@ -1,2 +1,2 @@
 # cardano-node-docker
-Build cardano-node Docker image
+Build Docker image for cardano-node
