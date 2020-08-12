@@ -1,7 +1,7 @@
 # ============================== Builder image ================================
 FROM ubuntu:20.04 AS build
 
-ARG NODE_VERSION="1.18.0"
+ARG NODE_VERSION="1.18.1"
 ARG CABAL_VERSION="3.2.0.0"
 ARG GHC_VERSION="8.6.5"
 
