@@ -80,4 +80,7 @@ COPY --from=build /usr/local/bin/cardano-node /usr/local/bin/cardano-cli /usr/lo
 COPY --from=build /usr/local/lib/libsodium.* /usr/local/lib/
 COPY --from=build /usr/local/lib/pkgconfig /usr/local/lib/
 
+# Prevent lookup exceptions
+RUN apt-get update && apt-get install -y netbase
+
 ENTRYPOINT ["/usr/local/bin/cardano-node", "run"]
